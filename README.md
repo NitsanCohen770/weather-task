@@ -38,6 +38,8 @@ Users should be able to:
 - [React](https://reactjs.org/) - JS library
 - [Styled Components](https://styled-components.com/) - For styles
 
+-For testing I used Storybook and Jest.
+
 ### What I learned
 
 I learned that most weather APIS want money for more than the most basic service. lol.
