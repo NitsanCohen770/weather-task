@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots GetLocationButton Default 1`] = `
+<div
+  className="sc-bdnxRM eNLVqx"
+  onClick={[Function]}
+>
+  <div>
+    Get My Location Weather 
+  </div>
+  <span
+    aria-hidden={true}
+    className="material-icons MuiIcon-root fa fa-plus-circle"
+  />
+</div>
+`;
