@@ -10,7 +10,7 @@ export const GetLocationWrapper = styled.div`
   top: 20;
   color: white;
   z-index: 1000;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.8);
   padding: 5px;
   border-radius: 10px;
   font-family: 'Roboto', sans-serif;
