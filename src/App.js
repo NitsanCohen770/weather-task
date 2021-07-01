@@ -14,7 +14,7 @@ function App() {
         query: `${success.coords.latitude},${success.coords.longitude}`,
       };
       axios
-        .get(`https://api.positionstack.com/v1/reverse`, { params })
+        .get(`http://api.positionstack.com/v1/reverse`, { params })
         .then(res => {
           setCity(res.data.data[0].county);
         });
@@ -30,7 +30,7 @@ function App() {
       query: city,
     };
     axios
-      .get('https://api.weatherstack.com/forecast', {
+      .get('http://api.weatherstack.com/forecast', {
         params: weatherParams,
       })
       .then(response => {
