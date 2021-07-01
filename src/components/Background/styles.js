@@ -4,7 +4,7 @@ import nightBackground from '../../assets/images/night.jpg';
 
 export const StyledBackground = styled.div`
   background-image: url(${props =>
-    props.day === 'yes' ? dayBackground : nightBackground});
+    props.isDay === 'yes' ? dayBackground : nightBackground});
   background-size: cover;
   height: 100px;
   position: absolute;

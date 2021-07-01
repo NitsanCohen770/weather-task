@@ -41,7 +41,7 @@ function App() {
         console.error(error);
       });
   }, [city]);
-
+  console.log(weatherData?.is_day);
   return (
     <>
       <GetLocationButton getLocation={getLocation} />
