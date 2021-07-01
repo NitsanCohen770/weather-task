@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [](https://stupefied-almeida-475fe8.netlify.app/)
+- Live Site URL: [Live](https://stupefied-almeida-475fe8.netlify.app/)
 
 ## My process
 
