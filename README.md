@@ -49,7 +49,7 @@ I learned that most weather APIS want money for more than the most basic service
 
 ## Author
 
-- LinkedIn - [@yourusername](https://www.linkedin.com/in/nitsan-cohen/)
+- LinkedIn - [@Nitsan Cohen](https://www.linkedin.com/in/nitsan-cohen/)
 
 ## Acknowledgments
 
