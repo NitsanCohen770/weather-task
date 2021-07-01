@@ -9,66 +9,59 @@ const days = [
   {
     day: 'Today',
     date: date.getDate(),
+    id: nanoid(),
   },
   {
     day: new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(
       date.setDate(date.getDate() + 1)
     ),
     date: date.getDate(),
+    id: nanoid(),
   },
   {
     day: new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(
       date.setDate(date.getDate() + 1)
     ),
     date: date.getDate(),
+    id: nanoid(),
   },
   {
     day: new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(
       date.setDate(date.getDate() + 1)
     ),
     date: date.getDate(),
+    id: nanoid(),
   },
   {
     day: new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(
       date.setDate(date.getDate() + 1)
     ),
     date: date.getDate(),
+    id: nanoid(),
   },
   {
     day: new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(
       date.setDate(date.getDate() + 1)
     ),
     date: date.getDate(),
+    id: nanoid(),
   },
   {
     day: new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(
       date.setDate(date.getDate() + 1)
     ),
     date: date.getDate(),
+    id: nanoid(),
   },
 ];
-const defaultState = {
-  0: true,
-  1: false,
-  2: false,
-  3: false,
-  4: false,
-  5: false,
-  6: false,
-};
+
 const WeatherList = ({ weatherData }) => {
-  const [enlarged, setEnlarged] = useState(defaultState);
+  const [enlarged, setEnlarged] = useState(0);
   return days.map((weather, index) => {
     return (
       <div
-        onClick={() => {
-          if (index === 0) {
-            setEnlarged({ ...defaultState });
-          } else {
-            setEnlarged({ ...defaultState, [index]: true, 0: false });
-          }
-        }}
-        key={nanoid()}
+        key={weather.id}
+        onClick={() => setEnlarged(index)}
         style={{
           display: 'inline-flex',
           marginTop: '50px',
@@ -80,7 +73,7 @@ const WeatherList = ({ weatherData }) => {
           feelsLike={weatherData?.feelslike}
           temperature={weatherData?.temperature}
           icon={weatherData?.weather_icons[0]}
-          enlarged={enlarged[index]}
+          enlarged={index === enlarged}
           weatherDescription={weatherData?.weather_descriptions[0]}
         />
       </div>
